@@ -1,49 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <groupId>contohprojectmaven</groupId>
+  <artifactId>contohproject</artifactId>
+  <version>0.3.5</version>
 
-  <!-- Gunakan domain terbalik atau nama unik sebagai groupId -->
-  <groupId>com.salman</groupId>
-<artifactId>basic-java-maven</artifactId>
-<version>0.0.1-SNAPSHOT</version>
+<dependencies>
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.11</version> <!-- Or whatever JUnit you're using. -->
+	</dependency>
+</dependencies>
 
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <!-- Konfigurasi untuk upload ke GitHub Packages -->
-  <distributionManagement>
+<distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/salman258258/Basic-Java-maven_2211104056_SALMAN-ALFA-RIZZI</url>
     </repository>
-    <snapshotRepository>
-      <id>github</id>
-      <name>GitHub Packages Snapshot</name>
-      <url>https://maven.pkg.github.com/salman258258/Basic-Java-maven_2211104056_SALMAN-ALFA-RIZZI</url>
-    </snapshotRepository>
   </distributionManagement>
-
-  <build>
-    <plugins>
-      <!-- Plugin untuk deploy -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.1.1</version>
-      </plugin>
-    </plugins>
-  </build>
+  
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+ </properties>
+  
 </project>
+
