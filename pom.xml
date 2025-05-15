@@ -6,7 +6,7 @@
   <!-- Gunakan domain terbalik atau nama unik sebagai groupId -->
   <groupId>com.salman</groupId>
 <artifactId>basic-java-maven</artifactId>
-<version>0.3.4</version>
+<version>0.3.6</version>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
