@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>contohprojectmaven</groupId>
   <artifactId>contohproject</artifactId>
-  <version>0.3.5</version>
+  <version>0.3.4</version>
 
 <dependencies>
   <dependency>
@@ -19,15 +19,11 @@
       <url>https://maven.pkg.github.com/salman258258/Basic-Java-maven_2211104056_SALMAN-ALFA-RIZZI</url>
     </repository>
   </distributionManagement>
-
-
-
-	
-	
   <properties>
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
  </properties>
-  
+
+	
 </project>
 
