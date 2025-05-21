@@ -20,8 +20,18 @@ public class Counter {
 		count--;
 	}
 	
+	public void increaseBy(int value) {
+		count += value;
+	}
+	
+	public void decreaseBy(int value) {
+		count -= value;
+	}
+	
+	public void multiplyBy(int value) {
+		count *= value;
+	}
+	
 	public int getCount() {
 		return count;
 	}
-	
-}
